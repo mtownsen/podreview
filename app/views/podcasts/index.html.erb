@@ -1,0 +1,9 @@
+<div class="row">
+  <% @podcasts.each do |podcast| %>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to (image_tag podcast.image.url(:medium), class: 'image'), podcast %>
+        </div>
+      </div>
+  <% end %>
+</div>
